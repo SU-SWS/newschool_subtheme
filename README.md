@@ -1,4 +1,4 @@
-# [Stanford Starter](https://github.com/SU-SWS/stanford_starter)
+# [Stanford Starter](https://github.com/SU-SWS/newschool_subtheme)
 ##### Version: 8.x-1.0-dev
 
 Changelog: [Changelog.txt](CHANGELOG.txt)
@@ -6,7 +6,7 @@ Changelog: [Changelog.txt](CHANGELOG.txt)
 Description
 ---
 
-Stanford Starter is a Stanford sub-theme that works with the Stanford Basic theme.
+New School Subtheme is a Stanford sub-theme that works with the Stanford Basic theme.
 
 Documentation
 ---
