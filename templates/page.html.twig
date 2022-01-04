@@ -7,3 +7,12 @@
 
 {# Change the brand bar. #}
 {%- set brand_bar_variant = "su-brand-bar--bright" -%}
+
+{# Override the footer #}
+{% block block_footer %}
+  <footer id="footer">
+    {{ page.footer }}
+    
+    {%- include "@basic-dist/decanter/components/global-footer/global-footer.twig" with {modifier_class : "su-global-footer--dark"} -%}
+  </footer>
+{% endblock %}
