@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.su-lockup {
+  @include newschool-font--sans-base;
+  font-size: $su-root-font-size;
+}
+
+// overriding fonts from Stanford Basic
+.su-link--internal {
+  // @include vpue-font--lora-base;
+}
+
+body {
+  @include modular-typography-base;
+  // @include vpue-font--lora-base;
+  color: $su-color-black;
+}

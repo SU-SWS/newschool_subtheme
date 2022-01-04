@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+$newschool-font--sans: 'Source Sans Pro', sans-serif;
+
+@mixin newschool-font--sans-base {
+  font-family: $newschool-font--sans;
+}
