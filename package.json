@@ -1,7 +1,7 @@
 {
-  "name": "stanford_starter",
+  "name": "newschool_subtheme",
   "version": "1.0.0",
-  "repository": "https://github.com/SU-SWS/stanford_starter",
+  "repository": "https://github.com/SU-SWS/newschool_subtheme",
   "scripts": {
     "build": "webpack --mode=development --display-error-details",
     "publish": "webpack --mode=production",
