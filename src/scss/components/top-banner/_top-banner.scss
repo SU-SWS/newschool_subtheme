@@ -18,8 +18,13 @@
   }
 
   .newschool--heading-top-banner {
+    @include responsive-spacing('margin', 1 2 1 2);
+
+    @include grid-media-min('lg') {
+      @include responsive-spacing('margin', 3);
+    }
+
     z-index: 10;
-    margin: 50px;
     top: 0;
     position: absolute;
     color: $su-color-white;
@@ -37,6 +42,12 @@
 
     @include grid-media-min('md') {
      opacity: .7;
+    }
+
+    .su-card__contents {
+      @include grid-media-min('md') {
+        opacity: 1;
+       }
     }
 
     p {
