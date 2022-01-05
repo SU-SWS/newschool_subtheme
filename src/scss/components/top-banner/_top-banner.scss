@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+// Banners action links are to be red
+.ptype-stanford-banner,
+.node-stanford-page-su-page-banner {
+  .su-link--action {
+    color: $su-color-bright-red;
+
+    &::after {
+      background-color: $su-color-bright-red;
+    }
+  }
+}
+
+.node-stanford-page-su-page-banner {
+  .su-hero {
+    justify-content: end;
+  }
+
+  .newschool--heading-top-banner {
+    @include responsive-spacing('margin', 1 2 1 2);
+
+    @include grid-media-min('lg') {
+      @include responsive-spacing('margin', 3);
+    }
+
+    z-index: 10;
+    top: 0;
+    position: absolute;
+    color: $su-color-white;
+  }
+
+  .su-hero__card {
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+    text-align: center;
+    top: inherit;
+    width: 100%;
+
+    @include grid-media-min('md') {
+     opacity: .7;
+    }
+
+    .su-card__contents {
+      @include grid-media-min('md') {
+        opacity: 1;
+       }
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+
+}
