@@ -1,12 +1,17 @@
 @charset "UTF-8";
 
 .su-hero {
+
   &.overlay-right {
     min-height: 75px;
 
     .su-hero__media {
       min-height: 75px;
       max-height: 75px;
+
+      @include grid-media-max('md') {
+        display: none;
+      }
     }
 
     .su-hero__card {
@@ -24,6 +29,13 @@
       top: auto;
       width: 100%;
 
+      @include grid-media-max('md') {
+        background-color: $su-color-black;
+        padding: 25px 0;
+        min-height: 75px;
+        max-height: 75px;
+      }
+
       .su-card__contents {
         display: flex;
         justify-content: center;
@@ -33,13 +45,11 @@
 
         h2 {
           @include type_d;
-          display: inline;
           margin-bottom: 0;
           font-weight: $su-font-semi-bold;
         }
   
         .su-card__button {
-          display: inline;
           margin: 0;
           width: auto;
         }
