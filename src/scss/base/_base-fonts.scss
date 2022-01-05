@@ -5,13 +5,15 @@
   font-size: $su-root-font-size;
 }
 
-// overriding fonts from Stanford Basic
-.su-link--internal {
-  // @include vpue-font--lora-base;
-}
+.su-wysiwyg-text {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include newschool-font--sans-base;
+    
+    font-weight: 300;
+  }
 
-body {
-  @include modular-typography-base;
-  // @include vpue-font--lora-base;
-  color: $su-color-black;
 }
