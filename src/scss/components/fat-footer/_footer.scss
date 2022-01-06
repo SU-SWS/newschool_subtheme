@@ -2,8 +2,9 @@
 
 /* Footer Layout */
 .newschool-fat-footer {
-  color: $newschool-color-off-white;
-  background: url("../../assets/jpg/fat-footer-bkg.jpg") no-repeat;
+  color: $su-color-white;
+  // background: url("../../assets/jpg/fat-footer-bkg.jpg") no-repeat;
+  background-image: linear-gradient(rgba(47,36,36,0.05), rgba(47,36,36,0.05)), url(../../assets/jpg/fat-footer-bkg.jpg);
   background-size: cover;
   background-position: top center;
   background-color: $su-color-black;
@@ -26,7 +27,7 @@
       }
 
       .newschool-fat-footer__lockup-wordmark {
-        color: $newschool-color-off-white;
+        color: $su-color-white;
       }
     }
 
@@ -37,11 +38,11 @@
       }
 
       .su-lockup__line1 {
-        color: $newschool-color-off-white;
+        color: $su-color-white;
       }
   
       .su-lockup__line2 {
-        color: $newschool-color-off-white;
+        color: $su-color-white;
         padding-top: 1rem;
       }
     }
@@ -51,30 +52,35 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    padding-top: 0;
   }
   
   .newschool-fat-footer__columns {
     @include modular-spacing('padding-top', 2);
+    row-gap: 0;
+    padding-bottom: 50rem;
 
     @include grid-media-min('md') { // 768px
       grid-template-columns: 1.1fr 2fr;
       column-gap: 60px;
       grid-template-areas: "A B" "C C";
+      padding-bottom: 50rem;
     }
 
     @include grid-media-min('xl') { // 1200px
       grid-template-columns: 1.5fr 3fr;
       column-gap: 90px;
       grid-template-areas: "A B";
+      padding-bottom: 25rem;
     }
   }
 
   a.mailto svg {
-    fill: $newschool-color-off-white;
+    fill: $su-color-white;
   
     &:hover,
     &:focus {
-      fill: $newschool-color-off-white;
+      fill: $su-color-white;
     }
   }
 
@@ -82,23 +88,23 @@
     @include modular-spacing('padding-bottom', 2);
 
     .contact-link {
-      color: $newschool-color-off-white;
+      color: $su-color-white;
       text-decoration: none;
 
       &:hover,
       &:focus {
         text-decoration: underline;
-        color: $newschool-color-off-white;
+        color: $su-color-white;
       }
 
       &::after {
-        fill: $newschool-color-off-white;
+        fill: $su-color-white;
       }
   
       &:hover,
       &:focus {
         &::after {
-          background-color: $newschool-color-off-white;
+          background-color: $su-color-white;
         }
       }
     }
@@ -112,7 +118,7 @@
       padding-left: 2px; // needed for tabbing experience
 
       i::before {
-        color: $newschool-color-off-white;
+        color: $su-color-white;
       }
   
       span {
@@ -128,13 +134,13 @@
   nav {
     // all regular navigation links
     a {
-      color: $newschool-color-off-white;
+      color: $su-color-white;
       text-decoration: none;
 
       &:hover,
       &:focus {
         text-decoration: underline;
-        color: $newschool-color-off-white;
+        color: $su-color-white;
       }
 
       &.su-link--external::after {
