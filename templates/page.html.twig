@@ -10,9 +10,8 @@
 
 {# Override the footer #}
 {% block block_footer %}
-  <footer id="footer">
-    {{ page.footer }}
-    
+  <footer id="footer">    
+    {%- include "@newschool_subtheme/components/fat-footer/fat-footer.html.twig" -%}
     {%- include "@basic-dist/decanter/components/global-footer/global-footer.twig" with {modifier_class : "su-global-footer--dark"} -%}
   </footer>
 {% endblock %}
