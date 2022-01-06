@@ -75,32 +75,33 @@
     }
   }
 
-  a.mailto svg {
-    fill: $su-color-white;
   
-    &:hover,
-    &:focus {
-      fill: $su-color-white;
-    }
-  }
-
   .newschool-fat-footer__contact {
     @include modular-spacing('padding-bottom', 2);
 
+    a.mailto svg {
+      fill: $su-color-white;
+    
+      &:hover,
+      &:focus {
+        fill: $su-color-white;
+      }
+    }
+    
     .contact-link {
       color: $su-color-white;
       text-decoration: none;
-
+      
       &:hover,
       &:focus {
         text-decoration: underline;
         color: $su-color-white;
       }
-
+      
       &::after {
         fill: $su-color-white;
       }
-  
+      
       &:hover,
       &:focus {
         &::after {

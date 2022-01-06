@@ -12,3 +12,93 @@
 .su-site-search {
   display: none;
 }
+
+.su-multi-menu {
+  &.su-multi-menu--right {
+    .su-multi-menu__menu-lv1,
+    > ul {
+      justify-content: center;
+    }
+  }
+}
+
+.su-multi-menu {
+  .su-multi-menu__nav-toggle--right {
+    &:hover::before,
+    &::before {
+      color: transparent;
+      background-color: transparent;
+    }
+
+    &[aria-expanded="true"] {
+      color: $su-color-digital-red-light;
+
+      &::before {
+        color: $su-color-digital-red-light;
+        background-color: $su-color-digital-red-light;
+      }
+    }
+  }
+
+  .su-nav-toggle {
+    &::before {
+      background: $su-color-digital-red-light url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
+    }
+
+    &:focus,
+    &:hover {
+      &::before {
+        background: $su-color-digital-red-light url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
+      }
+    }
+  }
+
+  .su-multi-menu__link:focus,
+  .su-multi-menu__link:hover {
+    &::before {
+      background-color: $su-color-digital-red-light;
+    }
+  }
+
+  @include grid-media-min('lg') {
+    > .su-multi-menu__menu > .su-multi-menu__item {
+      .su-multi-menu__link {
+        color: $su-color-black;
+
+        &:hover,
+        &:focus {
+          color: $su-color-digital-red-light;
+          text-decoration: none;
+
+          // &::before {
+          //   background-color: $su-color-digital-red-light;
+          //   transform: scaleX(1);
+          //   visibility: visible;
+          // }
+        }
+      }
+
+      &.su-multi-menu__item--active-trail {
+        .su-multi-menu__link {
+          // color: $su-color-digital-red-light;
+          color: $su-color-digital-red-light;
+
+          &::before {
+            background-color: $su-color-digital-red-light;
+          }
+
+          &:hover,
+          &:focus {
+            color: $su-color-digital-red-light;
+            text-decoration: none;
+
+            &::before {
+              background-color: $su-color-digital-red-light;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
