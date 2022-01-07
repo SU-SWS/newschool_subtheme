@@ -51,8 +51,12 @@
   .su-local-footer__cell2 {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 3rem;
     padding-top: 0;
+
+    .newschool-fat-footer__links-section-3 {
+      flex-basis: 75%;
+    }
   }
   
   .newschool-fat-footer__columns {
