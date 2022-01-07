@@ -7,22 +7,7 @@
       justify-content: center;
     }
   }
-}
 
-.su-site-search {
-  display: none;
-}
-
-.su-multi-menu {
-  &.su-multi-menu--right {
-    .su-multi-menu__menu-lv1,
-    > ul {
-      justify-content: center;
-    }
-  }
-}
-
-.su-multi-menu {
   .su-multi-menu__nav-toggle--right {
     &:hover::before,
     &::before {
@@ -31,24 +16,11 @@
     }
 
     &[aria-expanded="true"] {
-      color: $su-color-digital-red-light;
+      color: $su-color-digital-red;
 
       &::before {
-        color: $su-color-digital-red-light;
-        background-color: $su-color-digital-red-light;
-      }
-    }
-  }
-
-  .su-nav-toggle {
-    &::before {
-      background: $su-color-digital-red-light url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
-    }
-
-    &:focus,
-    &:hover {
-      &::before {
-        background: $su-color-digital-red-light url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
+        color: $su-color-digital-red;
+        background-color: $su-color-digital-red;
       }
     }
   }
@@ -56,7 +28,7 @@
   .su-multi-menu__link:focus,
   .su-multi-menu__link:hover {
     &::before {
-      background-color: $su-color-digital-red-light;
+      background-color: $su-color-digital-red;
     }
   }
 
@@ -67,33 +39,32 @@
 
         &:hover,
         &:focus {
-          color: $su-color-digital-red-light;
+          color: $su-color-digital-red;
           text-decoration: none;
 
-          // &::before {
-          //   background-color: $su-color-digital-red-light;
-          //   transform: scaleX(1);
-          //   visibility: visible;
-          // }
+          &::before {
+            background-color: $su-color-digital-red;
+            transform: scaleX(1);
+            visibility: visible;
+          }
         }
       }
 
       &.su-multi-menu__item--active-trail {
         .su-multi-menu__link {
-          // color: $su-color-digital-red-light;
-          color: $su-color-digital-red-light;
+          color: $su-color-digital-red;
 
           &::before {
-            background-color: $su-color-digital-red-light;
+            background-color: $su-color-digital-red;
           }
 
           &:hover,
           &:focus {
-            color: $su-color-digital-red-light;
+            color: $su-color-digital-red;
             text-decoration: none;
 
             &::before {
-              background-color: $su-color-digital-red-light;
+              background-color: $su-color-digital-red;
               display: block;
             }
           }
@@ -101,4 +72,8 @@
       }
     }
   }
+}
+
+.su-site-search {
+  display: none;
 }
