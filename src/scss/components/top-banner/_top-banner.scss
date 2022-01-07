@@ -20,12 +20,17 @@
   }
 
   .newschool--heading-top-banner {
-    @include responsive-spacing('margin', 1 2 1 2);
+    @include responsive-spacing('margin', 0 2 1 2);
 
     @include grid-media-min('lg') {
       @include responsive-spacing('margin', 3);
     }
 
+    @include newschool-font--sans-base;
+    @include type_a;
+
+    line-height: 1.3;
+    font-weight: $su-font-semi-bold;
     z-index: 10;
     top: 0;
     position: absolute;
@@ -38,6 +43,7 @@
     margin-top: 0;
     margin-bottom: 0;
     max-width: 100%;
+    position: absolute; //fix for Safari misalignment
     text-align: center;
     top: inherit;
     width: 100%;
@@ -46,6 +52,15 @@
       background-color: rgba(255, 255, 255, 0.7);
     }
 
+    .su-card__contents {
+      padding: 2.5rem;
+    }
+
+    span {
+      @include type_d;
+      margin-bottom: 0;
+      font-weight: $su-font-semi-bold;
+    }
 
     p {
       margin: 0 auto;
