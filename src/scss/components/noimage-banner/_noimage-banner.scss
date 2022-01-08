@@ -52,6 +52,17 @@
         .su-card__button {
           margin: 0;
           width: auto;
+          padding: .3em;
+          background: $su-color-black-60;
+
+          .su-link--action {
+            color: $su-color-white;
+
+            &::after {
+              background-color: $su-color-white;
+            }
+            
+          }
         }
 
       }
