@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.su-multi-menu>.su-multi-menu__menu>.su-multi-menu__item.su-multi-menu__item--active-trail .su-multi-menu__item--current .su-multi-menu__link {
+  color: $su-color-digital-red;
+}
+
 .su-multi-menu {
   &.su-multi-menu--right {
     .su-multi-menu__menu-lv1,
@@ -52,7 +56,7 @@
 
       &.su-multi-menu__item--active-trail {
         .su-multi-menu__link {
-          color: $su-color-digital-red;
+          // color: $su-color-digital-red;
 
           &::before {
             background-color: $su-color-digital-red;
