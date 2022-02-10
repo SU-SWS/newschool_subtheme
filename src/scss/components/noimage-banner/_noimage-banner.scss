@@ -54,6 +54,10 @@
             @include type_d;
             margin-bottom: 0;
             font-weight: $su-font-semi-bold;
+
+            a {
+              color: $su-color-digital-blue-light;
+            }
           }
 
           .su-card__button {

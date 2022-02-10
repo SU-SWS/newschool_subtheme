@@ -21,7 +21,7 @@
       min-height: 26px;
       vertical-align: bottom;
       width: auto;
-    
+
       @include grid-media('md') {
         border-right: none;
       }
@@ -40,11 +40,10 @@
       .su-lockup__line1 {
         color: $su-color-white;
       }
-  
+
       .su-lockup__line2 {
         color: $su-color-white;
         padding-top: 1rem;
-        line-height: .8em;
       }
     }
   }
@@ -59,7 +58,7 @@
       flex-basis: 75%;
     }
   }
-  
+
   .newschool-fat-footer__columns {
     @include modular-spacing('padding-top', 2);
     row-gap: 0;
@@ -80,33 +79,33 @@
     }
   }
 
-  
+
   .newschool-fat-footer__contact {
     @include modular-spacing('padding-bottom', 2);
 
     a.mailto svg {
       fill: $su-color-white;
-    
+
       &:hover,
       &:focus {
         fill: $su-color-white;
       }
     }
-    
+
     .contact-link {
       color: $su-color-white;
       text-decoration: none;
-      
+
       &:hover,
       &:focus {
         text-decoration: underline;
         color: $su-color-white;
       }
-      
+
       &::after {
         fill: $su-color-white;
       }
-      
+
       &:hover,
       &:focus {
         &::after {
@@ -119,14 +118,14 @@
   // Social link styles
   .newschool-fat-footer__social-links-container {
     padding-top: 2rem;
-    
+
     .newschool-fat-footer__social-links {
       padding-left: 2px; // needed for tabbing experience
 
       i::before {
         color: $su-color-white;
       }
-  
+
       span {
         font-weight: bold;
         font-size: 2.5rem;
@@ -135,8 +134,8 @@
       }
     }
   }
-  
-  
+
+
   nav {
     // all regular navigation links
     a {
