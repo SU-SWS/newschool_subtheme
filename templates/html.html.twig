@@ -1,0 +1,5 @@
+{% if public or 'site_manager' in user.roles or 'administrator' in user.roles %}
+  {% include '@basic/html.html.twig' %}
+{% else %}
+  <a href="/saml_login">Log In</a>
+{% endif %}
