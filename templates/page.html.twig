@@ -8,6 +8,19 @@
 {# Change the brand bar. #}
 {%- set brand_bar_variant = "su-brand-bar--bright" -%}
 
+{# Masthead Section. #}
+{%- block block_header -%}
+  {%- if page.header or page.search or page.menu -%}
+    <header class="su-masthead su-masthead--right su-masthead--dark">
+      <section>
+        {{ page.header }}
+        {{ page.search }}
+        {{ page.menu }}
+      </section>
+    </header>
+  {%- endif -%}
+{%- endblock -%}
+
 {# Override the footer #}
 {% block block_footer %}
   <footer id="footer">    
