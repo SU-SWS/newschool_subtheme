@@ -20,3 +20,23 @@ function newschool_subtheme_theme_suggestions_block_alter(array &$suggestions, a
     $suggestions[] = 'block__stanford_basic_search';
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+ 
+function newschool_subtheme_preprocess_node(&$variables) {
+$file = $variables['file'];
+  $result = \Drupal::entityQuery('media')
+    ->condition('bundle', 'image')
+    ->condition('sample_logo_0.target_id', $file->id())
+    ->execute();
+  if (!empty($result)) {
+    $media = \Drupal::entityTypeManager()->getStorage('media')->load(reset($result));
+    $variables['link']->setText($media->label());
+  }
+  dpm($result);
+  dpm($media);
+}
+
+

@@ -21,11 +21,11 @@
     }
 
     &[aria-expanded="true"] {
-      color: $su-color-digital-red;
+      color: $su-color-white;
 
       &::before {
-        color: $su-color-digital-red;
-        background-color: $su-color-digital-red;
+        color: $su-color-white;
+        background-color: $su-color-white;
       }
     }
   }
@@ -37,6 +37,7 @@
     }
   }
 
+  // drop down menus.
   @include grid-media-min('lg') {
     > .su-multi-menu__menu > .su-multi-menu__item {
       .su-multi-menu__link {
@@ -71,6 +72,89 @@
             &::before {
               background-color: $su-color-digital-red;
               display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // First level of nav that needs to be white
+  @include grid-media-min('lg') {
+    > .su-multi-menu__menu.su-multi-menu__menu-lv1 > .su-multi-menu__item {
+      > .su-multi-menu__link {
+        color: $su-color-white;
+
+        &:hover,
+        &:focus {
+          color: $su-color-white;
+          text-decoration: none;
+
+          &::before {
+            background-color: $su-color-white;
+            transform: scaleX(1);
+            visibility: visible;
+          }
+        }
+      }
+
+      &.su-multi-menu__item--active-trail {
+        .su-multi-menu__link {
+
+          &::before {
+            background-color: $su-color-white;
+          }
+
+          &:hover,
+          &:focus {
+            // color: $su-color-white;
+            text-decoration: none;
+
+            &::before {
+              background-color: $su-color-white;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // mobile hamburger white.
+  .su-multi-menu__nav-toggle {
+    color: $su-color-white;
+
+    &:after {
+      background: url("#{$su-image-path}/hamburger-white.svg") no-repeat 3px 0;
+    }
+
+    &[aria-expanded=true]:after {
+      background: url("#{$su-image-path}/close-white.svg") no-repeat 3px 0;
+    }
+
+    &:active:before,
+    &[aria-expanded=false]:focus:before,
+    &[aria-expanded=false]:hover:before,
+    &[aria-expanded=true]:focus:before,
+    &[aria-expanded=true]:hover:before {
+      background-color: $su-color-white;
+    }
+  }
+  
+  // Change the caret for only the large and up.
+  &.su-multi-menu--right.su-multi-menu--dropdowns {
+    .su-multi-menu__menu {
+      >.su-multi-menu__item--parent {
+        >.su-nav-toggle {
+
+          &::before {
+            background: transparent url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
+          }
+        
+          &:focus,
+          &:hover {
+            &::before {
+              background: transparent url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
             }
           }
         }
