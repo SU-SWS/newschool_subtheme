@@ -14,6 +14,59 @@ use Drupal\media\Entity\Media;
 function newschool_subtheme_preprocess_html(&$variables) {
   $variables['stanford_basic_path'] = drupal_get_path('theme', 'stanford_basic');
   $variables['public'] = (bool) \Drupal::state()->get('newschool_subtheme.public', false);
+
+  $twittercard = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'twitter:card',
+      'content' => 'summary_large_image',
+    ],
+  ];
+
+  $twittersite = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'twitter:site',
+      'content' => '@stanford',
+    ],
+  ];
+
+  $twittercreator = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'twitter:creator',
+      'content' => '@stanford',
+    ],
+  ];
+
+  $twittertitle = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'twitter:title',
+      'content' => 'Stanford New School',
+    ],
+  ];
+
+  $twitterdesc = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'twitter:description',
+      'content' => 'Some very cool text about the new school',
+    ],
+  ];
+
+  $twitterimg = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'twitter:image',
+      'content' => 'https://styletest.sites.stanford.edu/sites/g/files/sbiybj23051/files/media/image/banner-180516-5687.jpg',
+    ],
+  ];
+
+  $variables['page']['#attached']['html_head'][] = [$twittercard, 'twitter:card'];
+  $variables['page']['#attached']['html_head'][] = [$twittersite, 'twitter:site'];
+  $variables['page']['#attached']['html_head'][] = [$twitterdesc, 'twitter:description'];
+  $variables['page']['#attached']['html_head'][] = [$twitterimg, 'twitter:image'];
 }
 
 /**
