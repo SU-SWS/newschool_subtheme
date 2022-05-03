@@ -43,7 +43,7 @@ function newschool_subtheme_preprocess_html(&$variables) {
     '#tag' => 'meta',
     '#attributes' => [
       'name' => 'twitter:title',
-      'content' => 'Stanford New School',
+      'content' => 'Stanford Doerr School of Sustainability',
     ],
   ];
 
@@ -51,7 +51,7 @@ function newschool_subtheme_preprocess_html(&$variables) {
     '#tag' => 'meta',
     '#attributes' => [
       'name' => 'twitter:description',
-      'content' => 'Some very cool text about the new school',
+      'content' => 'Educating tomorrow’s problem solvers and change makers, and accelerating the development of large-scale solutions to the climate crisis.',
     ],
   ];
 
@@ -59,7 +59,7 @@ function newschool_subtheme_preprocess_html(&$variables) {
     '#tag' => 'meta',
     '#attributes' => [
       'name' => 'twitter:image',
-      'content' => 'https://styletest.sites.stanford.edu/sites/g/files/sbiybj23051/files/media/image/banner-180516-5687.jpg',
+      'content' => 'https://sustainability20220407.sites.stanford.edu/sites/g/files/sbiybj25076/files/media/image/mountainsridgehike_hannahshabb_2020landscapes.jpeg',
     ],
   ];
 
