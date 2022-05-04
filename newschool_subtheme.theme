@@ -59,7 +59,7 @@ function newschool_subtheme_preprocess_html(&$variables) {
     '#tag' => 'meta',
     '#attributes' => [
       'name' => 'twitter:image',
-      'content' => '/sites/g/files/sbiybj25076/files/media/image/mountainsridgehike_hannahshabb_2020landscapes.jpeg',
+      'content' => 'https://sustainability.stanford.edu/sites/g/files/sbiybj25076/files/media/image/mountainsridgehike_hannahshabb_2020landscapes.jpeg',
     ],
   ];
 
