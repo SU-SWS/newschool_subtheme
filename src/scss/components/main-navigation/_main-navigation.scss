@@ -138,6 +138,10 @@
   .su-multi-menu__nav-toggle {
     color: $su-color-white;
 
+    &:hover {
+      color: $su-color-white;
+    }
+
     &:after {
       background: url("#{$su-image-path}/hamburger-white.svg") no-repeat 3px 0;
     }

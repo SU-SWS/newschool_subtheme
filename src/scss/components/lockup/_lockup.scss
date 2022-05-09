@@ -13,3 +13,11 @@
     line-height: 1;
   }
 }
+
+@include grid-media-max('sm') {
+  .su-lockup--option-none {
+    .su-lockup__custom-logo {
+      max-width: 150px;
+    }
+  }
+}
