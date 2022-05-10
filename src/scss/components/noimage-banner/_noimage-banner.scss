@@ -53,7 +53,12 @@
           h2 {
             @include type_c;
             margin-bottom: 0;
+            margin-top: -0.2em;
             font-weight: $su-font-semi-bold;
+
+            @include grid-media-max('sm') {
+              margin-top: 10px;
+            }
 
             a {
               color: $su-color-white;
