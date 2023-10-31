@@ -1,3 +1,4 @@
+RETIRED. This theme is no longer in use. 
 # [Stanford Starter](https://github.com/SU-SWS/newschool_subtheme)
 ##### Version: 8.x-1.0-dev
 
